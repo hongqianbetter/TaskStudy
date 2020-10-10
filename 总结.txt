@@ -1,0 +1,1 @@
+App启动后 创建TaskAffiny为包名的栈 

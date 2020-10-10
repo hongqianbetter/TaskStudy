@@ -1,1 +1,6 @@
-App启动后 创建TaskAffiny为包名的栈 
+App启动后 创建TaskAffiny为包名的栈
+
+1. TaskAffiny必须与SingleXXX联用  单一设置TaskAffiny 并不会新开栈 (效果等同于木有设置)
+2. A B(SingleTask)C  B设置TaskAffiny(不同于包名) C正常模式无论是否配置TaskAffiny 都与B运行在同一栈
+3. 有几个Task,任务列表就有几个最近在运行的卡片  android:excludeFromRecents="true" 会将配置的那个Task不
+显示在最近活动列表(且只有运行在那个Task里面的所有activity都配置才可,只要有一个不配置就会失效)

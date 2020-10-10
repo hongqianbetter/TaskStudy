@@ -10,7 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".FirstActivity">
+        <activity android:name=".FirstActivity"
+            android:excludeFromRecents="false"
+         >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,9 +22,14 @@
 
 
         <activity android:name=".SecondActivity"
-            android:taskAffinity="com.coocaa.taskstudy" android:launchMode="singleTask"/>
+            android:taskAffinity="com.coocaa.taskstudy.second"
+            android:excludeFromRecents="false"
+            android:launchMode="singleTask"/>
 
-        <activity android:name=".ThirdActivity"></activity>
+        <activity android:name=".ThirdActivity"
+          android:excludeFromRecents="true"
+            android:taskAffinity="com.coocaa.taskstudy.second" android:launchMode="singleTask"
+            ></activity>
     </application>
 
 </manifest>
